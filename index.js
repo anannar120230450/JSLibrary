@@ -14,6 +14,7 @@ const htmlElements = {
     addNewBookFormTitleInput: document.querySelector("#add-new-book-form-title-input"),
     addNewBookFormAuthorInput: document.querySelector("#add-new-book-form-author-input"),
     addNewBookFormPagesInput: document.querySelector("#add-new-book-form-pages-input"),
+    addNewBookFormReadCheckboxInput: document.querySelector("#add-new-book-form-read-checkbox-input"),
     addNewBookFormAddBtn: document.querySelector("#add-new-book-form-add-btn"),
 };
 
@@ -30,7 +31,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
     // add new book form button
     htmlElements.addNewBookFormAddBtn.addEventListener("click", () => {
-        addToLib(htmlElements.addNewBookFormTitleInput.value, htmlElements.addNewBookFormAuthorInput.value, htmlElements.addNewBookFormPagesInput.value, true);
+        addToLib(htmlElements.addNewBookFormTitleInput.value, htmlElements.addNewBookFormAuthorInput.value, htmlElements.addNewBookFormPagesInput.value, htmlElements.addNewBookFormReadCheckboxInput.checked);
         renderLib();
         htmlElements.addNewBookFormBackdrop.style.display = "none";
     });
