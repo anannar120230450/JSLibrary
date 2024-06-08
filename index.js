@@ -8,8 +8,14 @@
 */
 const library = [];
 const htmlElements = {
+    addNewProjectBtn: document.getElementById("add-new-project-btn"),
     contentBooksView: document.querySelector(".content-books-view"),
 };
+
+window.addEventListener("DOMContentLoaded", () => {
+    ////////// add new project btn event ///////////
+
+});
 
 function Book(title, author, pageNum, read) {
     this.title = title;
@@ -24,4 +30,4 @@ Book.prototype.toggleRead = () => {
 
 function addToLib(title, author, pageNum, read) {
     library.push(new Book(title, author, pageNum, read));
-}
+};
