@@ -93,8 +93,11 @@ function renderLib() {
     /////// toggle read state button ///////
     document.querySelectorAll(".book-card-read-button").forEach(button => {
         button.addEventListener("click", () => {
-            // find the relatve object in the library array to the parent book of the button
-            consolee.log(1);
+            // find the equivalent object in the library array to the parent book of the button
+            const bookElements = [...document.querySelectorAll(".book-card")];
+            // console.log(library[bookElements.indexOf(button.parentElement.parentElement)]);
+            library[bookElements.indexOf(button.parentElement.parentElement)].toggleRead();
+            renderLib();
         });
     });
 };
