@@ -31,7 +31,7 @@ body > * {
     font-size: 2rem;
 }
 
-#add-new-project-btn {
+#add-new-book-btn {
     background-color: #1a1a1a;
     width: 2.5rem;
     color: white;
@@ -41,7 +41,7 @@ body > * {
     font-size: 1.1rem;
 }
 
-#add-new-project-btn:hover {
+#add-new-book-btn:hover {
     transform: scale(1.2);
     box-shadow: 4px 0px 10px 2px rgba(0, 0, 0, 0.3);
 }

@@ -8,7 +8,7 @@
 */
 const library = [];
 const htmlElements = {
-    addNewProjectBtn: document.getElementById("add-new-project-btn"),
+    addNewBookBtn: document.getElementById("add-new-book-btn"),
     contentBooksView: document.querySelector(".content-books-view"),
 };
 
@@ -31,3 +31,7 @@ Book.prototype.toggleRead = () => {
 function addToLib(title, author, pageNum, read) {
     library.push(new Book(title, author, pageNum, read));
 };
+
+function renderBooks() {
+
+}
