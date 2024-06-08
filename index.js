@@ -88,4 +88,13 @@ function renderLib() {
 
         htmlElements.contentBooksView.appendChild(newBookCardElement);
     });
+
+    // events
+    /////// toggle read state button ///////
+    document.querySelectorAll(".book-card-read-button").forEach(button => {
+        button.addEventListener("click", () => {
+            // find the relatve object in the library array to the parent book of the button
+            consolee.log(1);
+        });
+    });
 };
