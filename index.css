@@ -17,6 +17,11 @@ body {
     background-color: silver;
 }
 
+input {
+    outline: none;
+    padding: .45rem;
+}
+
 body > * {
     padding: 1.2rem;
 }
@@ -134,4 +139,56 @@ p.book-card-info-pages {
 
 .book-card-read-button:hover {
     opacity: 0.7;
+}
+
+.add-new-book-form-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+#add-new-book-form {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    width: 375px;
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.add-new-book-form-inputs-flex {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.add-new-book-form-inputs-flex > input {
+    height: 1.5rem;
+    background-color: #797979;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+.add-new-book-form-inputs-flex > input:hover {
+    opacity: .9;
+}
+
+#add-new-book-form-add-btn {
+    height: 2.75rem;
+    background-color: rgb(39, 172, 39);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#add-new-book-form-add-btn:hover {
+   opacity: .75;
 }
