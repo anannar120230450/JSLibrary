@@ -44,7 +44,7 @@ function Book(title, author, pageNum, read) {
     this.read = read;
 };
 
-Book.prototype.toggleRead = () => {
+Book.prototype.toggleRead = function() {
     this.read = !this.read;
 };
 
@@ -72,24 +72,13 @@ function renderLib() {
                     if (book.read) {
                         return `
                             <button class="book-card-read-button">
-                            ${function() {
-                                if (book.read) {
-                                    return "Read";
-                                } else if (!book.read) {
-                                    return "Unread";
-                                };
-                            }()}
+                                Read
+                            </button>
                         `
                     } else if (!book.read) {
                         return `
                             <button class="book-card-read-button unread">
-                                ${function() {
-                                    if (book.read) {
-                                        return "Read";
-                                    } else if (!book.read) {
-                                        return "Unread";
-                                    };
-                                }()}
+                                Unread
                             </button>
                         `;
                     };
